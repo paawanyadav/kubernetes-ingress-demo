@@ -7,6 +7,7 @@
     -- Just copy these commands for adding Metallb in your cluster
     $ kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
     $ kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
+    
 
 ### 1. Clone the repository
     $ git clone https://github.com/paawanyadav/kubernetes-ingress-demo.git

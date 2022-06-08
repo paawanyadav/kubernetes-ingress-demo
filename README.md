@@ -37,26 +37,20 @@
     -- Ingress
     $ kubectl apply -f ingress.yaml
     
-    
-    
-    
-### 3. Now apply yaml files in series  
-    => Before make changes in mysql-secret.yaml encode your values
-    $ For Encode --> echo -n "Yourvalue" | base64
-    $ For Decode --> echo -n "EncodedValue" | base64 -d
-    $ nano mysql-secret.yaml
+### 3. Check your LoadBalancer Port  
+    $ kubectl get ingress personal-ingress
+    -- Copy "IP" mentioned in "Address" column
 
-### 3. Apply files 
-    $ kubectl apply -f mysql-secret.yaml
-    $ kubectl apply -f mysql.yaml
-    $ kubectl db-connection-configmap.yaml
-    $ kubectl wordpress.yaml
-
-### 5. By Using NodePort
-    -- Uncomment line 53 and 60 in file wordpress.yaml
-    -- Again Follow Apply files 
-    -- kubectl get all -o wide --> by this see where your wordpress is running in which node 
-    -- Hit node IP with NodePort 30080  --> IP:30080
+### 4. Setup local DNS entry 
+    $ sudo nano /etc/host
+    -- paste Ip wordpress.example.com  EX- 172.16.16.151 wordpress.example.com
+    -- paste Ip aspnewer.example.com   EX- 172.16.16.151 aspnewer.example.com
+    
+### 5. All Done!!###
+    -- Now You can access your sites
+    -- Wordpress  ---> wordpress.example.com
+    -- Node App   ---> wordpress.example.com/node
+    -- Dotnet App ---> aspnewer.example.com
 
 ### 6. Importannt Commands
     -- kubectl cluster-info  --> Give Cluster information
@@ -65,3 +59,5 @@
     -- kubectl get services --> Give details of services
     -- kubectl get pods --> Give details of pods
     -- kubectl describe "pod-name" , "service-name" --> Give detailed information
+
+### Important Links 

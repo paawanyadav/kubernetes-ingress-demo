@@ -1,10 +1,15 @@
 # Deploying three application and access it through nginx-ingress
 
-### 1. Clone the repository
-    $ git https://github.com/paawanyadav/kubernetes_wordpress-mysql.git
-    $ cd wordpress
 
-### 2. Configure password for DB or leave it default 
+### 1. Pre-requisite
+    -- For configure this we need LoadBalancer solution in my case I'm using [metallb](https://metallb.universe.tf/installation/) 
+    $ cd kubernetes-ingress-demo
+
+### 1. Clone the repository
+    $ git clone https://github.com/paawanyadav/kubernetes-ingress-demo.git
+    $ cd kubernetes-ingress-demo
+
+### 2.  
     => Before make changes in mysql-secret.yaml encode your values
     $ For Encode --> echo -n "Yourvalue" | base64
     $ For Decode --> echo -n "EncodedValue" | base64 -d

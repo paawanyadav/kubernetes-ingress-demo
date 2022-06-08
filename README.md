@@ -2,8 +2,11 @@
 
 
 ### 1. Pre-requisite
-Need LoadBalancer --> In my case I'm using metallb
-    $ cd kubernetes-ingress-demo
+Ingress need Loadbalancer 
+I'm using [metallb](https://metallb.universe.tf/installation/)
+    -- Just copy these commands for adding Metallb in your cluster
+    $ kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
+    $ kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
 
 ### 1. Clone the repository
     $ git clone https://github.com/paawanyadav/kubernetes-ingress-demo.git

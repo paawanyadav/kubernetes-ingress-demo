@@ -1,4 +1,4 @@
-# Deploy WordPress Mysql on Kubernetes
+# Deploying three application and access it through nginx-ingress
 
 ### 1. Clone the repository
     $ git https://github.com/paawanyadav/kubernetes_wordpress-mysql.git

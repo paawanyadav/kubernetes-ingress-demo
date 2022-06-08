@@ -1,8 +1,8 @@
 # Deploying three application and access it through nginx-ingress
-[hello](google.com)
+
 
 ### 1. Pre-requisite
-    -- Need LoadBalancer --> In my case I'm using metallb
+Need LoadBalancer --> In my case I'm using metallb
     $ cd kubernetes-ingress-demo
 
 ### 1. Clone the repository

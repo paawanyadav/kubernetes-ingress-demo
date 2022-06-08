@@ -16,6 +16,7 @@
     $ kubectl apply -f metallb-config.yaml
 
 ### 3. Now apply yaml files in series
+    # Run Below Command Step by Step
     -- Mysql 
     $ kubectl apply -f mysql/mysql-secret.yaml
     $ kubectl apply -f mysql/mysql.yaml

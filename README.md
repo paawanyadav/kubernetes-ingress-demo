@@ -2,7 +2,7 @@
 
 
 ### 1. Pre-requisite
-    -- For configure this we need LoadBalancer solution in my case I'm using [metallb](https://metallb.universe.tf/installation/) 
+    -- For configure this we need LoadBalancer solution in my case I'm using [metallb] (https://metallb.universe.tf/installation/) 
     $ cd kubernetes-ingress-demo
 
 ### 1. Clone the repository

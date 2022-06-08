@@ -2,8 +2,8 @@
 
 
 ### 1. Pre-requisite
-Ingress need Loadbalancer 
-I'm using [metallb](https://metallb.universe.tf/installation/)
+    -- Ingress need Loadbalancer 
+    -- I'm using metallb is a load-balancer implementation for bare metal Kubernetes clusters
     -- Just copy these commands for adding Metallb in your cluster
     $ kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
     $ kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml

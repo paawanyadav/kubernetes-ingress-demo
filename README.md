@@ -46,18 +46,21 @@
     -- paste Ip wordpress.example.com  EX- 172.16.16.151 wordpress.example.com
     -- paste Ip aspnewer.example.com   EX- 172.16.16.151 aspnewer.example.com
     
-### 5. All Done!!###
+### 5. All Done!!
     -- Now You can access your sites
     -- Wordpress  ---> wordpress.example.com
     -- Node App   ---> wordpress.example.com/node
     -- Dotnet App ---> aspnewer.example.com
 
 ### 6. Importannt Commands
-    -- kubectl cluster-info  --> Give Cluster information
-    -- kubectl get all -o wide  --> Detailed information about on going process
-    -- kubectl get deploy  --> Give details of deployment
-    -- kubectl get services --> Give details of services
-    -- kubectl get pods --> Give details of pods
-    -- kubectl describe "pod-name" , "service-name" --> Give detailed information
+    -- kubectl cluster-info      --> Give Cluster information
+    -- kubectl get all -o wide   --> Detailed information about on going process
+    -- kubectl get deploy        --> Give details of deployment
+    -- kubectl get services      --> Give details of services
+    -- kubectl get pods          --> Give details of pods
+    -- kubectl describe "object" --> Give detailed information
 
 ### Important Links 
+[metallb](https://metallb.universe.tf/installation/)
+[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+[Nginx-Ingress](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/)

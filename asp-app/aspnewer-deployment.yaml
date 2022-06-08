@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: aspnewer-deploy
+  name: aspnewer-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aspnewer-deploy
+  template:
+    metadata:
+      labels:
+        app: aspnewer-deploy
+    spec:
+      containers:
+      - image: paawanyadav/aspnewer2:latest
+        name: aspnewer
